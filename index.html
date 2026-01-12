@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vikk Sandhu | Music Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0d0d0f; --card:#181820; --accent:#007bff; --accent2:#ff9933; --muted:#aaa; --glass: rgba(255,255,255,0.05);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,Arial; margin:0; background:linear-gradient(180deg,#0d0d0f 0%, #1a1a1f 100%); color:#f5f5f7; -webkit-font-smoothing:antialiased}
+    .container{max-width:1180px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:white;box-shadow:0 4px 14px rgba(0,0,0,0.4)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:15px;font-weight:500;transition:color .2s}
+    nav a:hover{color:var(--accent)}
+
+    /* Hero Section */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center;margin-top:34px}
+    .hero h1{font-size:42px;margin:0 0 12px 0;line-height:1.15;color:#ffffff}
+    .tag{color:var(--muted);margin-bottom:22px;font-size:16px}
+    .btn{background:var(--accent);border:none;padding:13px 22px;border-radius:12px;color:white;font-weight:600;cursor:pointer;transition:all .25s; text-decoration:none; display:inline-block;}
+    .btn:hover{box-shadow:0 4px 16px rgba(0,123,255,.4);transform:translateY(-2px)}
+    
+    /* Services Section - Detailed Look */
+    .services{display:flex;gap:18px;margin-top:32px}
+    .service{flex:1;background:var(--glass);padding:22px;border-radius:16px;text-align:center;transition:transform .25s; border: 1px solid rgba(255,255,255,0.05)}
+    .service:hover{transform:translateY(-5px); background:rgba(255,255,255,0.08)}
+    .service h4{margin:12px 0 6px 0;color:var(--accent); font-size:18px}
+    .muted{color:var(--muted);font-size:13px; line-height:1.4}
+
+    /* Video Grid */
+    .video-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-top:20px}
+    .video-item {background: rgba(255,255,255,0.03); padding: 15px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05);}
+    .video-thumbnail-box { width: 100%; border-radius: 10px; overflow: hidden; aspect-ratio: 16 / 9; margin-bottom:12px}
+    .video-thumbnail-box img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9;}
+    .video-watch-btn { color: white; text-decoration: none; font-size: 14px; font-weight: 600; text-align: center; display:block; padding: 12px; background: var(--accent); border-radius: 10px; transition: 0.3s;}
+    .video-watch-btn:hover { background: var(--accent2); }
+
+    .more-btn-container { text-align: center; margin: 40px 0; }
+    .more-btn { background: transparent; border: 2px solid var(--accent2); color: var(--accent2); padding: 14px 40px; border-radius: 30px; font-weight: 700; text-decoration: none; transition: 0.3s; display: inline-block; }
+    .more-btn:hover { background: var(--accent2); color: #000; }
+
+    footer{padding:30px 0; color:var(--muted); text-align:center; border-top:1px solid rgba(255,255,255,0.08)}
+    @media (max-width:980px){.hero{grid-template-columns:1fr;}.services{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SM</div>
+        <div>
+          <div style="font-weight:700">Vikk Sandhu Music studio</div>
+          <div style="font-size:12px; color:var(--muted)">Pro Recording • Mixing • Mastering</div>
+        </div>
+      </div>
+      <nav><a href="#services">Services</a><a href="#videos">Videos</a><a href="#contact">Contact</a></nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Yes, your voice will get the recognition it deserves.</h1>
+          <p class="tag">Ambala's Premier Sound Studio for independent artists and professionals.</p>
+          
+          <div class="services" id="services">
+            <div class="service">
+              <div style="font-size:30px">🎤</div>
+              <h4>Vocal Recording</h4>
+              <div class="muted">Acoustic treated booths, condenser mics (Neumann style), crystal clear capture.</div>
+            </div>
+            <div class="service">
+              <div style="font-size:30px">🎚️</div>
+              <h4>Mixing & Mastering</h4>
+              <div class="muted">Industry standard plugins, analog warmth, and perfect loudness for Spotify/YouTube.</div>
+            </div>
+            <div class="service">
+              <div style="font-size:30px">🎵</div>
+              <h4>Music Production</h4>
+              <div class="muted">Custom beats, full song arrangements, and background scoring for videos.</div>
+            </div>
+          </div>
+        </div>
+        
+        <aside style="background:var(--card); padding:20px; border-radius:20px; text-align:center">
+          <div style="width:100%; height:250px; background:#222; border-radius:15px; margin-bottom:15px; overflow:hidden">
+            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1000&auto=format&fit=crop" style="width:100%; height:100%; object-fit:cover">
+          </div>
+          <div style="font-weight:700; font-size:18px">Book Your Session</div>
+          <div style="color:var(--accent2); margin-bottom:15px">Starting ₹500/hr</div>
+          <a href="tel:+911234567890" class="btn" style="width:100%">Call Now</a>
+        </aside>
+      </section>
+
+      <section id="videos" style="margin-top:60px">
+        <h3 style="color:var(--accent2); text-align:center; font-size:28px">🎥 Featured Projects</h3>
+        <div class="video-grid">
+          <div class="video-item"><div class="video-thumbnail-box"><img src="https://img.youtube.com/vi/_gfxrtsIh-U/hqdefault.jpg"></div><a href="https://www.youtube.com/watch?v=_gfxrtsIh-U" target="_blank" class="video-watch-btn">▶ Watch Video</a></div>
+          <div class="video-item"><div class="video-thumbnail-box"><img src="https://img.youtube.com/vi/ou031AESWDU/hqdefault.jpg"></div><a href="https://www.youtube.com/watch?v=ou031AESWDU" target="_blank" class="video-watch-btn">▶ Watch Video</a></div>
+          <div class="video-item"><div class="video-thumbnail-box"><img src="https://img.youtube.com/vi/_B8MlWR6jFE/hqdefault.jpg"></div><a href="https://www.youtube.com/watch?v=_B8MlWR6jFE" target="_blank" class="video-watch-btn">▶ Watch Video</a></div>
+          <div class="video-item"><div class="video-thumbnail-box"><img src="https://img.youtube.com/vi/4XDZuaz2Pwo/hqdefault.jpg"></div><a href="https://www.youtube.com/watch?v=4XDZuaz2Pwo" target="_blank" class="video-watch-btn">▶ Watch Video</a></div>
+          <div class="video-item"><div class="video-thumbnail-box"><img src="https://img.youtube.com/vi/wt_qybs8xQk/hqdefault.jpg"></div><a href="https://www.youtube.com/watch?v=wt_qybs8xQk" target="_blank" class="video-watch-btn">▶ Watch Video</a></div>
+          <div class="video-item"><div class="video-thumbnail-box"><img src="https://img.youtube.com/vi/Gem--FXGw_A/hqdefault.jpg"></div><a href="https://www.youtube.com/watch?v=Gem--FXGw_A" target="_blank" class="video-watch-btn">▶ Watch Video</a></div>
+        </div>
+
+        <div class="more-btn-container">
+          <a href="all-videos.html" class="more-btn">View More Videos On New Page →</a>
+        </div>
+      </section>
+
+      <section id="contact" style="background:var(--card); padding:40px; border-radius:25px; margin-top:50px; text-align:center">
+         <h3>Ready to Record?</h3>
+         <p style="color:var(--muted)">Saha, Ambala, Haryana</p>
+         <button class="btn" style="background:var(--accent2); color:black" onclick="window.open('https://wa.me/918395923522?text=Hello%20Vikk%20Sandhu,%20')">Chat on WhatsApp</button>
+      </section>
+    </main>
+
+    <footer>© 2026 Sandhu Music Studio. All rights reserved.</footer>
+  </div>
+</body>
+</html>
